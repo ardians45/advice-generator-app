@@ -1,0 +1,93 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-dark-blue);
+}
+main {
+  position: relative;
+  margin: 100px auto 40px;
+  width: 90%;
+  background-color: var(--color-dark-grayish-blue);
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 0px 40px 0px;
+}
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header h1 {
+  color: var(--color-neon-green);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+article p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.dice-button {
+  background-color: var(--color-neon-green);
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: -25px;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  border: none;
+  transition: box-shadow 0.3s ease-in-out; /* Animasi untuk box-shadow */
+}
+
+.dice-button:hover {
+  box-shadow: 0 0 15px 5px var(--color-neon-green); /* Efek glow saat hover */
+}
+footer button img {
+  width: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+article p {
+  animation: fadeIn 1s ease-out;
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-top: 160px;
+    width: 40%;
+    padding: 15px 20px 40px 20px;
+  }
+}
